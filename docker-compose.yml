@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  budibase:
+    restart: unless-stopped
+    image: budibase/budibase:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - budibase_data:/data
+
+volumes:
+  budibase_data:
+    driver: local

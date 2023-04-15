@@ -4,8 +4,6 @@ services:
   budibase:
     restart: unless-stopped
     image: budibase/budibase:latest
-    ports:
-      - "8080:80"
     volumes:
       - budibase_data:/data
 
